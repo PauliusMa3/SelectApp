@@ -1,0 +1,40 @@
+.dropdown {
+  background: #fff;
+  list-style: none;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1), 0 5px 10px rgba(0,0,0,0.05);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  ul {
+    list-style: none;
+    max-height: 300px;
+    overflow-y: scroll;
+
+    li {
+      padding: 10px 15px;
+      font-size: 15px;
+      text-align: left;
+
+      &:hover {
+        background: #d0e0f5;
+        cursor: pointer;
+      }
+    }
+  }
+
+  & > * {
+    padding: 10px;
+  }
+}
+
+.active {
+  display: block;
+}
+
+.inactive {
+  display: none;
+}
